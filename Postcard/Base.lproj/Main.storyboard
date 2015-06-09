@@ -116,6 +116,15 @@
                                     <action selector="resetButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FcB-4W-pE1"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lan-xW-6yN">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="205" width="196" height="36"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -126,6 +135,7 @@
                                 <exclude reference="VcO-5r-H4m"/>
                                 <exclude reference="iNS-CN-Aa0"/>
                                 <exclude reference="fry-OS-SvI"/>
+                                <exclude reference="lan-xW-6yN"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -136,14 +146,16 @@
                                 <include reference="VcO-5r-H4m"/>
                                 <include reference="iNS-CN-Aa0"/>
                                 <include reference="fry-OS-SvI"/>
+                                <include reference="lan-xW-6yN"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="enterMessageTextField" destination="VcO-5r-H4m" id="y31-IL-Mf6"/>
-                        <outlet property="enterNameTextField" destination="zvS-f8-P5v" id="d9j-n8-syW"/>
+                        <outlet property="enterNameTextField" destination="zvS-f8-P5v" id="zCu-fB-18c"/>
                         <outlet property="mailButton" destination="iNS-CN-Aa0" id="S7t-r1-drn"/>
                         <outlet property="messageLabel" destination="1Rs-5N-j8b" id="Uk1-gc-A53"/>
+                        <outlet property="nameLabel" destination="lan-xW-6yN" id="fnt-yU-Gwp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
